@@ -6,13 +6,13 @@ function App() {
   const [numbers, setNumbers] = useState([1, 3, 4, 5]);
 
   const increment = () => {
-    if (numbers[0] <= 0) {
+    if ((numbers[0] = 0)) {
       setNumbers(numbers.map((number) => number + 1));
     }
   };
 
   const decrement = () => {
-    if (numbers >= 20) {
+    if ((numbers = 20)) {
       setNumbers(numbers.map((number) => number - 1));
     }
   };
@@ -21,11 +21,11 @@ function App() {
     <>
       <div className="lista">
         <Button text="<<" actionOnClick={decrement} />
-        <div className="numero">1</div>
-        <div className="numero">2</div>
-        <div className="numero">3</div>
-        <div className="numero">4</div>
-        <div className="numero">5</div>
+        <Number text={numbers[0]} />
+        <Number text={numbers[1]} />
+        <Number text={numbers[2]} />
+        <Number text={numbers[3]} />
+        <Number text={numbers[4]} />
         <Button text=">>" actionOnClick={increment} />
       </div>
     </>
