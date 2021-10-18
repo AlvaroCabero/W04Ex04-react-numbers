@@ -1,5 +1,5 @@
 const Miniscreen = ({ number }) => {
-  return <input type="text" value={number} readOnly />;
+  return <div className="miniscreen">{number}</div>;
 };
 
 export default Miniscreen;
